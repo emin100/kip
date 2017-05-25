@@ -22,4 +22,5 @@ from general.views import HomePageView
 urlpatterns = i18n_patterns(
     url(r'^admin/', admin.site.urls),
     url(r'^work/', include('work.urls')),
+    url(r'^accounts/', include('accounts.urls')),
 )

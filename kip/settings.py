@@ -38,7 +38,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -47,6 +46,7 @@ INSTALLED_APPS = [
     'bootstrap3',
     'work',
     'general',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -119,8 +119,8 @@ LANGUAGE_CODE = 'tr-TR'
 
 LANGUAGES = (
     ('en', _('English')),
-    ('tr', _('Turkce')),
-    ('ru', _('Rus')),
+    ('tr', _('Turkish')),
+    ('ru', _('Russian')),
 )
 
 LOCALE_PATHS = (
@@ -205,6 +205,7 @@ BOOTSTRAP3 = {
     'error_css_class': 'bootstrap3-error',
     'required_css_class': 'bootstrap3-required',
     'javascript_in_head': True,
-    'bootstrap_jquery_url': '/static/jquery.js'
+    'jquery_url': '//code.jquery.com/jquery.min.js',
+    'base_url': '/static/',
 }
 

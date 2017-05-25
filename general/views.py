@@ -10,10 +10,6 @@ from django.views.generic import TemplateView, FormView
 from work.forms import FilesForm
 
 
-class LoginView(LoginView):
-    template_name = 'general/login.html'
-
-
 class HomePageView(FormView):
     template_name = 'work/formset.html'
     form_class = FilesForm

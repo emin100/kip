@@ -5,34 +5,33 @@
 
 
 {% block title %}
-    Login
+   {% trans 'login'|capfirst %}
 {% endblock %}
 
 {% block content %}
-    {% bootstrap_messages %}
-    <div class="row">
-        <div class="col-md-4 col-xs-2">
+    <div class="row" >
+        <div class="col-md-5 col-xs-3">
 
         </div>
-        <div class="col-md-4 col-xs-8">
+        <div class="col-md-3 col-xs-6">
             <div class="panel panel-default fill" id="login">
                 <div class="panel-heading">
-                    <h2 class="panel-title">{% trans 'Login' %}</h2>
+                    <h2 class="panel-title">{% trans 'login'|capfirst %}</h2>
                 </div>
                 <div class="panel-body">
-                    <form action="{{ request.get_full_path }}" method="post" class="form">
+                    <form action="{% url 'accounts' %}" method="post" class="form">
                         {% csrf_token %}
                         {% bootstrap_form form %}
                         {% buttons %}
                             <button type="submit" class="btn pull-right btn-primary">
-                                {% bootstrap_icon "ok" %} {% trans 'Login' %}
+                                {% bootstrap_icon "ok" %} {% trans 'login'|capfirst %}
                             </button>
                         {% endbuttons %}
                     </form>
                 </div>
             </div>
         </div>
-        <div class="col-md-4 col-xs-2">
+        <div class="col-md-4 col-xs-3">
 
         </div>
     </div>

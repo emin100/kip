@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-25 08:31+0000\n"
+"POT-Creation-Date: 2017-05-25 10:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,13 +20,14 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: general/templates/general/base.html:31
-msgid "KIP"
+#: account/templates/account/login.html:8
+#: account/templates/account/login.html:20
+#: account/templates/account/login.html:28
+msgid "login"
 msgstr ""
 
-#: general/templates/general/login.html:20
-#: general/templates/general/login.html:28
-msgid "Login"
+#: general/templates/general/base.html:31
+msgid "KIP"
 msgstr ""
 
 #: kip/settings.py:121
@@ -34,9 +35,9 @@ msgid "English"
 msgstr ""
 
 #: kip/settings.py:122
-msgid "Turkce"
+msgid "Turkish"
 msgstr ""
 
 #: kip/settings.py:123
-msgid "Rus"
+msgid "Russian"
 msgstr ""

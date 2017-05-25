@@ -5,20 +5,7 @@
 
 
 {% block bootstrap3_content %}
-    <style>
-        html,
-        body {
-            height: 100%;
-        }
-
-        .container {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
+    {% bootstrap_messages %}
     <div class="container-fluid">
         <div class="row">
             {% autoescape off %}{% bootstrap_messages %}{% endautoescape %}
@@ -28,7 +15,7 @@
     </div>
     <hr>
     <ul class="list-inline text-center">
-        <li>{% trans "KIP" %}</li>
+        <li>{% trans "KIP" %} {% now "Y" %}</li>
     </ul>
 
 {% endblock %}
