@@ -19,9 +19,6 @@ from django.contrib import admin
 
 from general.views import HomePageView
 
-urlpatterns = i18n_patterns(
-    url(r'^admin/', admin.site.urls),
-    url(r'^work/', include('work.urls')),
-    url(r'^accounts/', include('accounts.urls')),
-    url(r'^/', include('general.urls')),
-)
+urlpatterns = [
+    url(r'^/', HomePageView.as_view(),name='home'),
+]
