@@ -13,16 +13,10 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url, include
-from django.conf.urls.i18n import i18n_patterns
-from django.contrib import admin
+from django.conf.urls import url
 
 from general.views import HomePageView
 
-urlpatterns = i18n_patterns(
-    url(r'^admin/', admin.site.urls),
-    url(r'^work/', include('work.urls')),
-    url(r'^accounts/', include('accounts.urls')),
-    url(r'^source/', include('source.urls')),
-    url(r'^/', include('general.urls')),
-)
+urlpatterns = [
+    url(r'^', HomePageView.as_view(), name='homex'),
+]

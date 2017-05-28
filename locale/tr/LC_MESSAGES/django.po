@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-25 10:35+0000\n"
+"POT-Creation-Date: 2017-05-27 12:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,24 +18,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: account/templates/account/login.html:8
-#: account/templates/account/login.html:20
-#: account/templates/account/login.html:28
-msgid "login"
+#: accounts/templates/account/login.html:8
+#: accounts/templates/account/login.html:16
+#: accounts/templates/account/login.html:24
+msgid "sign in"
 msgstr "giriş"
 
-#: general/templates/general/base.html:31
+#: general/templates/general/base.html:24
 msgid "KIP"
 msgstr ""
 
-#: kip/settings.py:121
+#: kip/settings.py:117
 msgid "English"
 msgstr ""
 
-#: kip/settings.py:122
+#: kip/settings.py:118
 msgid "Turkish"
 msgstr ""
 
-#: kip/settings.py:123
+#: kip/settings.py:119
 msgid "Russian"
 msgstr ""
+
+#~ msgid "login"
+#~ msgstr "giriş"

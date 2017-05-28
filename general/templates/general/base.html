@@ -6,12 +6,18 @@
 
 {% block bootstrap3_content %}
     {% bootstrap_messages %}
+{#    <style>#}
+{#        .container-fluid {#}
+{#            position: absolute;#}
+{#            top: 50%;#}
+{#            left: 50%;#}
+{#            transform: translate(-50%, -50%);#}
+{#        }#}
+{#    </style>#}
     <div class="container-fluid">
-        <div class="row">
-            {% autoescape off %}{% bootstrap_messages %}{% endautoescape %}
+        {% autoescape off %}{% bootstrap_messages %}{% endautoescape %}
 
-            {% block content %}(no content){% endblock %}
-        </div>
+        {% block content %}(no content){% endblock %}
     </div>
     <hr>
     <ul class="list-inline text-center">
