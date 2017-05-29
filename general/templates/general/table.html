@@ -1,0 +1,36 @@
+{% extends "general/defaultview.html" %}
+{% load bootstrap3 %}
+{% load static %}
+{% load i18n %}
+
+
+{% block title_view %}
+    {% trans 'machine list'|capfirst %}
+{% endblock %}
+
+
+{% block content_view %}
+
+{#    <h2>{{ machine_list.name }}</h2>#}
+{##}
+{#    <table class="table table-responsive table-hover">#}
+{#        <thead>#}
+{#        <tr>#}
+{#            <th>#</th>#}
+{#            <th>First Name</th>#}
+{#            <th>Last Name</th>#}
+{#            <th>Username</th>#}
+{#        </tr>#}
+{#        </thead>#}
+{#        <tbody>#}
+{#        {% for publisher in object_list %}#}
+{#            <tr>#}
+{#                <th scope="row">1</th>#}
+{#                <td>Mark</td>#}
+{#                <td>Otto</td>#}
+{#                <td>@mdo</td>#}
+{#            </tr>#}
+{#        {% endfor %}#}
+{#        </tbody>#}
+{#    </table>#}
+{% endblock %}

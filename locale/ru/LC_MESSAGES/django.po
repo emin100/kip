@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-27 12:57+0000\n"
+"POT-Creation-Date: 2017-05-29 14:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,24 +20,40 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: accounts/templates/account/login.html:8
-#: accounts/templates/account/login.html:16
-#: accounts/templates/account/login.html:24
+#: accounts/templates/account/login.html:9
+#: accounts/templates/account/login.html:18
+#: accounts/templates/account/login.html:26
 msgid "sign in"
 msgstr ""
 
-#: general/templates/general/base.html:24
+#: general/templates/general/base.html:19
 msgid "KIP"
 msgstr ""
 
-#: kip/settings.py:117
-msgid "English"
+#: general/templates/general/table.html:8 source/views.py:21
+msgid "machine list"
 msgstr ""
 
 #: kip/settings.py:118
-msgid "Turkish"
+msgid "English"
 msgstr ""
 
 #: kip/settings.py:119
+msgid "Turkish"
+msgstr ""
+
+#: kip/settings.py:120
 msgid "Russian"
+msgstr ""
+
+#: source/models.py:28
+msgid "machine"
+msgstr ""
+
+#: source/models.py:43
+msgid "Machine Kind"
+msgstr ""
+
+#: source/models.py:58
+msgid "machine type"
 msgstr ""

@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url
 
-from general.views import HomePageView
+from source import views
 
+app_name = 'source'
 urlpatterns = [
-    url(r'^', HomePageView.as_view(), name='homex'),
+    # url(r'^', views.MachinePageView.as_view(), name='homex'),
+    url(r'^list', views.MachineListView.as_view(), name='machine_list'),
 ]
